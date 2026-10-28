@@ -1,0 +1,98 @@
+1. The Updated CSS
+
+Replace your previous CSS with this version to apply the specific font styles:
+CSS
+
+/* Container: 4 columns on desktop, adapts to smaller screens */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* The Card Link */
+.news-card {
+  text-decoration: none;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image Container */
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-bottom: 8px; /* Slightly tighter spacing for smaller text */
+  background-color: #f0f0f0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Headline Typography (Your Specific Requirements) */
+.news-card h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+/* Interactivity */
+.news-card:hover h3 {
+  color: #0056b3; /* Optional: subtle color change on hover */
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+2. The HTML (8 Stories)
+
+This structure works perfectly with the CSS above. You can swap out the # in href with your actual page links.
+HTML
+
+<div class="news-grid">
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/1/600/338" alt="News"></div>
+    <h3>US bombs military sites on Kharg Island; Tehran vows response</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/2/600/338" alt="News"></div>
+    <h3>North Korea fires 10 ballistic missiles during US-Seoul drills</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/3/600/338" alt="News"></div>
+    <h3>Missile hits US Embassy helipad in Baghdad amid rising tension</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/4/600/338" alt="News"></div>
+    <h3>Ghana launches 2026 Culture Week to reset tourism sector</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/5/600/338" alt="News"></div>
+    <h3>70% of Americans say new tariffs are driving price hikes</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/6/600/338" alt="News"></div>
+    <h3>Why the release of activist Sonam Wangchuk matters for Ladakh</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/7/600/338" alt="News"></div>
+    <h3>Antonelli makes history as youngest F1 Grand Prix pole sitter</h3>
+  </a>
+  <a href="#" class="news-card">
+    <div class="image-wrapper"><img src="https://picsum.photos/seed/8/600/338" alt="News"></div>
+    <h3>Edinburgh Zoo penguins find mates with pebbles painted by kids</h3>
+  </a>
+</div>

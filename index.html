@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Christian Council of Ghana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news-pages.css">
+</head>
+<body>
+
+    <header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images\christian council header.jpg" alt="CCG Logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="executive.html">EXECUTIVE</a></li>
+      <li><a href="whatwedo.html">WHAT WE DO</a></li>
+      <li><a href="pressreleases.html">PRESS RELEASES</a></li>
+       <li><a href="staff.html">STAFF</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+         <li><a href="give.html">GIVE</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="menu">
+      <ul class="menu-links">
+      <li><a href="memberchurches.html">Member Churches</a></li>
+      <li><a href="becomeamember.html">Become A Member</a></li>
+      <li><a href="ccgstructure.html">CCG Structure</a></li>
+      <li><a href="picturegallery.html">Picture Gallery</a></li>
+      <li><a href="videogallery.html">Video Gallery</a></li>
+      <li><a href="ministries.html">Ministries</a></li>
+      <li><a href="regions.html">Regions</a></li>
+       <li><a href="history.html">History</a></li>
+       <li><a href="pastexecutive.html">Past Executive</a></li>
+    </ul>
+
+</div>
+
+<div class="donate">
+  <img src="images\Donate.jpg" alt="Donation">
+
+</div>
+
+
+<div class="news-alert-bar">
+
+    <div class="news-alert-label">NEWS ALERT</div>
+
+    <div class="news-alert-ticker">
+        <div class="news-alert-items">
+            <span><b>Welcome to the Christian Council of Ghana.</b></span>
+            <span>2026 Ecumenical Convention scheduled from Nov. 17 - 20</span>
+            <span>2026 CCG/GPCC Joint Worship Service slated for October 29</span>
+            <span>Christian Council Thanks Dr. Bawumia for Supporting Ecumenical Convention</span>
+            <span>CCG 97th Anniversary Lectures scheduled for October 30, 2026</span>
+            <span>Christian Council expresses gratitude to Tobinco for support</span>
+            <span>Minister of Youth Development Call on Christian Council</span>
+             <span>visit www.christiancouncilofghana.orgfor more</span>
+              
+        </div>
+    </div>
+
+    <div class="news-alert-datetime">
+        <span id="current-date"></span>
+        <span id="current-time"></span>
+    </div>
+
+</div>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    document.getElementById("current-date").textContent =
+        now.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric"
+        });
+
+    document.getElementById("current-time").textContent =
+        now.toLocaleTimeString("en-GB", {
+            timeZone: "Africa/Accra",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false
+        });
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+<!-- Rolling Pictures Section -->
+
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="Gallery\2026 AGM.jpg" alt="General Secretary">
+      <div class="slide-text"></div>
+    </div>
+    <div class="slide">
+      <img src="Gallery\Clean Conference.jpg" alt="Meeting with Dr. Bawumia">
+    </div>
+    <div class="slide">
+      <img src="Gallery\2026 CCG & GCBC Worship Service.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="Gallery\2026 National Day of Prayer.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery/CP 2026.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\E Convention.jpeg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\ECC.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Ecumenical Convention.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\fomer Veep.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Food&Health.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Ghana Medical Trust Fund.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\GoldBoad.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Hon Afenyo Markin Visit.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Kenya CC.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\KKMA Visit.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Mahama Ayariga.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Muntaka's Visit.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\NYA Visit.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\VoiceofCCG2.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Women's Conference.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="Gallery\Youth Development.jpg" alt="Image 4">
+    </div>
+
+    <!-- Repeat images for seamless loop -->
+    <div class="slide">
+      <img src="Gallery\2026 AGM" alt="General Secretary">
+      <div class="slide-text">(repeat)</div>
+    </div>
+    <div class="slide">
+      <img src="Gallery\Clean Conference.jpg" alt="Meeting with Dr. Bawumia">
+    </div>
+    <div class="slide">
+      <img src="Gallery\2026 CCG & GCBC Worship Service.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="Gallery\2026 National Day of Prayer.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\CP 2026.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\E Convention.jpeg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\ECC.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Ecumenical Convention.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\fomer Veep.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Food&Health.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Ghana Medical Trust Fund.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\GoldBoad.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Hon Afenyo Markin Visit.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Kenya CC.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\KKMA Visit.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Mahama Ayariga.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Muntaka's Visit.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\NYA Visit.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\VoiceofCCG2.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Women's Conference.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+     <div class="slide">
+      <img src="Gallery\Youth Development.jpg" alt="Image 4">
+      <div class="slide-text">(repeat)</div>
+    </div>
+  </div>
+</div>
+<!-- Upcoming Programmes Alert -->
+<div class="upcoming-alert">
+    <div class="upcoming-heading">
+        &#128197; UPCOMING PROGRAMMES
+    </div>
+
+    <div class="upcoming-slider">
+        <div class="upcoming-slide active">
+            <p>2026 Ecumenical Convention scheduled from November 17 - 20</p>
+        </div>
+
+        <div class="upcoming-slide">
+            <p>Christian Council of Ghana's 97th Anniversary Lectures slated for October 30, 2026</p>
+        </div>
+
+        <div class="upcoming-slide">
+            <p>Christian Council of Ghana and Ghana Pentecostal and Charismatic Council Joint Worship Service 
+              on October 29, 2026</p>
+        </div>
+
+        <div class="upcoming-slide">
+            <p>Family Life Education and Counselling Training Programme || Febuary 2026</p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".upcoming-slide");
+    let currentSlide = 0;
+
+    if (slides.length > 1) {
+        setInterval(function () {
+            slides[currentSlide].classList.remove("active");
+
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            slides[currentSlide].classList.add("active");
+        }, 10000);
+    }
+});
+</script>
+
+<div class="current-pic">
+  <img src="Gallery\E Convention.jpeg" alt="Current Picture">
+</div>
+<br>
+ <h1>Top Stories</h1>
+<div class="top-stories">
+  <!-- Big story block linking to Dr. Bawumia page -->
+  <a href="ccg-thanks-dr-bawumia-for-support.html" class="big-story">
+    <img src="images/115.jpg" alt="Christian Council thanks Dr. Bawumia">
+    <h2>Christian Council Thanks Dr. Bawumia For supporting Ecumenical Convention</h2>
+  </a>
+
+  <!-- Small story block linking to Tobinco page -->
+  <a href="ccg-expresses-gratitute-to-tobinco.html" class="small-story">
+    <img src="images\116.jpg" alt="Christian Council shows gratitude to Tobinco">
+    <h3>Christian Council expresses gratitude to Tobinco for support</h3>
+  </a>
+</div>
+<br>
+<div class="video-section">
+  <h2>Latest Videos</h2>
+  <div class="video-grid">
+    <!-- Video 1 -->
+    <div class="video-item">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/6zIsPjl_89Q?si=4Rc-1V7nJFS633Y7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      </iframe>
+      <h5>CCG Leadership Call on Dr. Bawumia</h5>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-item">
+      <iframe width="100%" height="200" 
+       src="https://www.youtube.com/embed/GcfnHuPMdPU?si=gfMnxKN5srupBOQW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h5>John Maxwell Institute Call on CCG General Secretary in Accra</h5>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-item">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/w8J01ko82k4?si=KbRV6iNoDukTjtiN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h5>CCG Leadership thanks Elder Amo Tobbin for supporting Convention</h5>
+    </div>
+
+     <div class="video-item">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/2BaGSjPwASc?si=4WUvesjYYEYoz4r0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h5>CCG Leadership thanks Elder Amo Tobbin for supporting Convention</h5>
+    </div>
+
+     <div class="video-item">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/oZjKV5ImsyQ?si=obXnUFOsUZ0cS57O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h5>CCG Leadership thanks Elder Amo Tobbin for supporting Convention</h5>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-item">
+      <iframe width="100%" height="200" 
+      src="https://www.youtube.com/embed/4NC1NOddx9o?si=tF07EsIkxynkI62t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h5>Minister for Youth Development and Empowerment Call on Christian Council</h5>
+    </div>
+  </div>
+
+  <!-- Link to full gallery -->
+  <p style="margin-top:20px;">
+    <a href="videogallery.html">See full video gallery</a>
+  </p>
+</div>
+
+<div class="news-grid">
+  <a href="ccg-leadership-visits-un-residence-coordinator.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\NR21.jpg" alt="News Headline 1">
+    </div>
+    <h3>Christian Council Pays Courtesy Call On UN Resident Coordinator to Deepen Existing Partnership </h3>
+  </a>
+
+  <a href="youth-development-minister-visits-ccg.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\pic153.jpg" alt="News Headline 2">
+    </div>
+    <h3>Minister of Youth Development and Empowerment Calls on Christian Council</h3>
+  </a>
+
+  <a href="Christian-Council-Maxwell-EQUIP-Leadership-Meet.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\201.jpg" alt="News Headline 3">
+    </div>
+    <h3>Christian Council & Maxwell/EQUIP Leadership Ghana Hold Discussions on Ways Of Collaborating</h3>
+  </a>
+
+  <a href="For-Immediate-Release-Christian-Council-of-Ghana-Calls-For-Sound-and-Responsible-Prophecies.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\CCGlg.jpg" alt="News Headline 4">
+    </div>
+    <h3>For Immediate Release: Christian Council of Ghana Calls For Sound and Responsible Prophecies</h3>
+  </a>
+
+  <a href="Atta-Mills-Institute-Partakes-In-Christian-Council-2025-Ghana-Youth-Congress.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\GYC25.jpg" alt="News Headline 5">
+    </div>
+    <h3>Atta Mills Institute Partakes In Christian Council 2025 Ghana Youth Congress</h3>
+  </a>
+
+  <a href="The-Fourth-Global-Gathering-takes-place-in-Accra.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\FGG.jpg" alt="News Headline 6">
+    </div>
+    <h3>The Fourth Global Gathering (GC4) takes place in Accra</h3>
+  </a>
+
+  <a href="For-Immediate-Release-Beware-of-False-Teachers-and-Messiahs.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\221.jpg" alt="News Headline 7">
+    </div>
+    <h3>For Immediate: Release Beware of False Teachers and Messiahs</h3>
+  </a>
+
+  <a href="Christian-Council-MILLS-Institute-roll-out-Mindset-Transformation-series.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\pic125.jpg" alt="News Headline 8">
+    </div>
+    <h3>Christian Council, MILLS Institute roll out ‘Mindset Transformation’ series</h3>
+  </a>
+  <a href="Breaking-News-Christian-Council-Condemns-Assault-on-Pastor.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="Gallery\GSNew.JPG" alt="Press Release 42">
+    </div>
+    <h3>Breaking News: Christian Council Condemns Assault on Pastor</h3>
+  </a>
+</div>
+
+<div class="pic5"> 
+<img src="images\UNRC.jpg" alt="United Nations">
+</div>
+
+
+<div class="other-image">
+  <img src="images\pic67.jpg" alt="Picture 67">
+</div>
+<div class="news-grid1">
+  <a href="August-September-2025-Counselors-Programme-held.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\8967.jpg" alt="News Headline 9">
+    </div>
+    <h3>August/September 2025 CCG Counselors Programme takes place in Accra  </h3>
+  </a>
+
+  <a href="Christian-Council-expresses-concern-over-destruction-of-the-environment.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\Chc.jpg" alt="News Headline 10">
+    </div>
+    <h3>Christian Council expresses concern over destruction of the environment</h3>
+  </a>
+
+  <a href="Secretary-of-Global-Christian-Forum-Visits-CCG.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\gbf.jpg" alt="News Headline 11">
+    </div>
+    <h3>Secretary of Global Christian Forum Visits CCG</h3>
+  </a>
+
+  <a href="Rev-Enoch-Thompson-is-New-Chairman-of-the-Christian-Council-of-Ghana.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\revenochthompson.JPG" alt="News Headline 15">
+    </div>
+    <h3>Rev. Enoch Thompson is new Chairman of Christian Council of Ghana</h3>
+  </a>
+
+  <a href="/Dr-Bawumia-Addresses-CCGs-Ghana-Youth-Congress.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\GYouthC.JPG" alt="News Headline 16">
+    </div>
+    <h3>Dr Bawumia Addresses CCG's Ghana Youth Congress</h3>
+  </a>
+
+  <a href="Christian-Council's-2025-End-of-Year-Executive-Council-Retreat-held-in-Accra.html" class="news-card">
+    <div class="image-wrapper">
+      <img src="images\8081.jpg" alt="News Headline 12">
+    </div>
+    <h3>Christian Council's 2025 End of Year Executive Council Retreat held in Accra </h3>
+  </a>
+</div>
+
+<br>
+
+<div class="middle-picture">
+  <img src="images\1616.jpg" alt="Middle Picture">
+  <h3>Christian Council Commemorates International Day of Peaceful Coexistence</h3>
+</div>
+
+<br>
+<br>
+
+
+<h2 style="margin-left: 5%; font-family: Arial, Helvetica, sans-serif; text-align: center;">More Videos</h2>
+<div class="video-row">
+  <div>
+    <iframe width="350" height="250" src="https://www.youtube.com/embed/pzrr7QpZULI?si=zK7cso9Tb7nqcyJR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>Rev. Dr. Cyril Fayose (CCG General Secretary) Meets the Press ahead of the 2026 Christian Home Week</h4>
+
+  </div>
+
+  <div>
+    <iframe width="350" height="250" src="https://www.youtube.com/embed/t2otHpSemXM?si=kCzjYRWccK4FPPL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>2026 World Day of Prayer celebrations</h4>
+
+
+  </div>
+
+  <div>
+   <iframe width="350" height="250" src="https://www.youtube.com/embed/5IbchYbSAeM?si=zxXb-Cls-fWcVPz6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>Christian Council presents proposed MOU to Ministry of Local Gov., Chieftaincy & Religious Affairs</h4>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<div class="bottom-picture">
+  <img src="images\150.jpg" alt="Bottom Picture">
+  <p>2026 World Day of Prayer Celebrations</p>
+</div>
+
+<br>
+
+<h2 style="margin-left: 40%; font-family: Arial, Helvetica, sans-serif;">Links to Member Churches</h2>
+<div class="church-links">
+<a href="https://www.methodistchurch.org.gh/">The Methodist Church Ghana</a>
+<br>
+<a href="https://pcgonline.org/">The Presbyterian Church of Ghana</a>
+<br>
+<a href="https://thecmechurch.org/">Christian Methodist Episcopal Church</a>
+<br>
+<a href="https://www.ame-church.com/">African Methodist Episcopal Church</a>
+<br>
+<a href="https://epchurchghana.org/">Evangelical Presbyterian Church of Ghana</a>
+<br>
+<a href="https://ghanabaptistconvention.com/">Ghana Baptist Convention</a>
+<br>
+<a href="https://www.anglicannews.org/">Anglican Diocese of Accra</a>
+<br>
+<a href="https://www.facebook.com/GhanaPoliceChurch/">Ghana Police Church</a>
+<br>
+<a href="https://temajointchurch.org/">Tema Joint Church</a>
+<br>
+<a href="https://licfamily.org.gh/">Legon Interdenominational Church</a>
+<br>
+<a href="https://www.salvationarmy.org/">The Salvation Army</a>
+<br>
+<a href="https://amezion.org/">African Methodist Episcopal Zion Church</a>
+<br>
+</div>
+<br>
+<br>
+<section class="executives-section">
+
+    <div class="executives-container">
+
+        <!-- Picture 1 -->
+        <div class="executive-card">
+            <img src="images\chairman.png" alt="Chairman">
+
+            <a href="chairman.html" class="read-more">
+                Read More
+            </a>
+        </div>
+
+        <!-- Picture 2 -->
+        <div class="executive-card">
+            <img src="images\moderator.png" alt="Vice Chairman">
+
+            <a href="vice-chairman.html" class="read-more">
+                Read More
+            </a>
+        </div>
+
+        <!-- Picture 3 -->
+        <div class="executive-card">
+            <img src="images\GS.png" alt="General Secretary">
+
+            <a href="general-secretary.html" class="read-more">
+                Read More
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<br>
+<br>
+<br>
+     
+<footer>
+  <div class="social-icons">
+    <a href="https://facebook.com/ccghanaonline" target="_blank">
+      <img src="images\facebook.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/ccouncilgh" target="_blank">
+      <img src="images\instagram.png" alt="Instagram">
+    </a>
+    <a href="https://linkedin.com/in/christiancouncil-accra-119a88401/" target="_blank">
+      <img src="images\linkedIn.png" alt="LinkedIn">
+    </a>
+    <a href="https://youtube.com/@ccgaccra5151" target="_blank">
+      <img src="images\youtube.png" alt="Youtube">
+    </a>
+    <a href="https://tiktok.com/@ccgaccra7" target="_blank">
+      <img src="images\tiktok.png" alt="Tiktok">
+    </a>
+  </div>
+</footer>
+
+<div class="address">
+  <p>P.O. Box GP 919, Accra || F146/2 Lokko Road, Osu || GA-113-2609</p>
+  <p>Phone: +233 302 77 66 78 || info@christiancouncilofghana.org</p>
+</div>
+
+<br>
+
+<div class="reserved">
+<p>Copyright &copy; 2026 Christian Council of Ghana. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
